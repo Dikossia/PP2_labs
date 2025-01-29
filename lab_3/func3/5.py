@@ -69,7 +69,7 @@ def average(avr):
 
     for i in movies:
         if i["category"] == avr:
-            sum1+=i["imdb"]
+            sum1+= i["imdb"]
             sum2+=1
     return sum1/sum2
 
