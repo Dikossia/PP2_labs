@@ -1,35 +1,28 @@
-import random
-
-def guess_the_number():
-    name = input("Hello! What is your name?\n")
-    print(f"\nWell, {name}, I am thinking of a number between 1 and 20.")
-    number = random.randint(1, 20)
-    guesses = 0
-
-    while True:
-        try:
-            guess = int(input("\nTake a guess.\n"))
-            guesses += 1
-            if guess < number:
-                print("Your guess is too low.")
-            elif guess > number:
-                print("Your guess is too high.")
-            else:
-                print(f"Good job, {name}! You guessed my number in {guesses} guesses!")
-                break
-        except ValueError:
-            print("Please enter a valid number!")
-
-
-"""
-Hello! What is your name?
-KBTU
-
-Well, KBTU, I am thinking of a number between 1 and 20.
-Take a guess.
-12
-Your guess is too low.
-Take a guess.
-19
-Good job, KBTU! You guessed my number in 2 guesses!
-"""
+import random 
+    
+random_num = random.randint(1, 20)
+print("Hello! What is your name?")
+name = str(input())
+print(f"Well {name}, I am thinking of a number betweem 1 to 20")
+count = 1
+while True:
+    guess_number = input("Take a guess: ")
+        
+    if guess_number.lower() == 'q':
+        print("Goodbye!")
+        break
+    if not guess_number.isdigit():
+        print("Please enter a number!")
+        continue
+        
+    guess_num = int(guess_number)
+        
+    if guess_num < random_num:
+        print("Your guess is too low")
+        count += 1
+    elif guess_num > random_num:
+        print("Your guess id too high")
+        count += 1
+    else:
+        print(f"Good job, {name}! You guessed my number in {count} guesses!")
+        break
