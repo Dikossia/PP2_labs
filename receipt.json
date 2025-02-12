@@ -1,0 +1,98 @@
+{
+    "Store Name": "EUROPHARMA Астана",
+    "Receipt Number": "2331180266",
+    "Total Amount": "18 009,00",
+    "Transaction Time": "18.04.2019 11:13:58",
+    "Items": [
+        {
+            "Name": "Натрия хлорид 0,9%, 200 мл, фл",
+            "Quantity": 2.0,
+            "Price per unit": 154.0,
+            "Total Price": 308.0
+        },
+        {
+            "Name": "Борный спирт 3%, 20 мл, фл.",
+            "Quantity": 1.0,
+            "Price per unit": 51.0,
+            "Total Price": 51.0
+        },
+        {
+            "Name": "Шприц 2 мл, 3-х комп. (Bioject)",
+            "Quantity": 2.0,
+            "Price per unit": 16.0,
+            "Total Price": 32.0
+        },
+        {
+            "Name": "Система для инфузии Vogt Medical",
+            "Quantity": 2.0,
+            "Price per unit": 60.0,
+            "Total Price": 120.0
+        },
+        {
+            "Name": "Naturella прокладки Классик макси №8",
+            "Quantity": 1.0,
+            "Price per unit": 310.0,
+            "Total Price": 310.0
+        },
+        {
+            "Name": "AURA Ватные диски №150",
+            "Quantity": 1.0,
+            "Price per unit": 461.0,
+            "Total Price": 461.0
+        },
+        {
+            "Name": "Чистая линия скраб мягкий 50 мл",
+            "Quantity": 1.0,
+            "Price per unit": 381.0,
+            "Total Price": 381.0
+        },
+        {
+            "Name": "Чистая линия  скраб очищающийабрикос 50 мл",
+            "Quantity": 1.0,
+            "Price per unit": 386.0,
+            "Total Price": 386.0
+        },
+        {
+            "Name": "Чистая линия скраб мягкий 50 мл",
+            "Quantity": 1.0,
+            "Price per unit": 381.0,
+            "Total Price": 381.0
+        },
+        {
+            "Name": "Carefree салфетки Алоэвоздухопроницаемые №20",
+            "Quantity": 1.0,
+            "Price per unit": 414.0,
+            "Total Price": 414.0
+        },
+        {
+            "Name": "Pro Series Шампунь яркий цвет 500мл",
+            "Quantity": 1.0,
+            "Price per unit": 841.0,
+            "Total Price": 841.0
+        },
+        {
+            "Name": "Pro Series бальзам-ополаскивательдля длител ухода за окрашеннымиволосами Яркий цвет 500мл",
+            "Quantity": 1.0,
+            "Price per unit": 841.0,
+            "Total Price": 841.0
+        },
+        {
+            "Name": "[RX]-Натрия хлорид 0,9%, 100 мл, фл.",
+            "Quantity": 1.0,
+            "Price per unit": 168.0,
+            "Total Price": 168.0
+        },
+        {
+            "Name": "[RX]-Дисоль р-р 400 мл, фл.",
+            "Quantity": 1.0,
+            "Price per unit": 163.0,
+            "Total Price": 163.0
+        },
+        {
+            "Name": "[RX]-Церукал 2%, 2 мл, №10, амп.",
+            "Quantity": 2.0,
+            "Price per unit": 396.0,
+            "Total Price": 792.0
+        }
+    ]
+}
