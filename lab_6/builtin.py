@@ -14,7 +14,7 @@ from functools import reduce
 def multiply_list(numbers):
     return reduce(lambda x, y: x * y, numbers)
 
-print("Произведение всех чисел:", multiply_list([2, 3, 4, 5]))
+print("Произведение всех чисел:", multiply_list([2, 3, 4, 5, 6, 7]))
 
 
 #2 task
@@ -52,7 +52,7 @@ delayed_sqrt(num, delay)
 
 #5 task
 def all_true(t):
-    return all(t)  # Проверяет, являются ли все элементы True
+    return all(t)  
 
 # Примеры
 print(all_true((True, True, True)))  
