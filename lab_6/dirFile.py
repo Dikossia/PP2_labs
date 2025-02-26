@@ -1,5 +1,5 @@
 #1 task
-#  
+
 import os
 
 def list_directories_and_files(path="."):
@@ -18,7 +18,7 @@ def list_directories_and_files(path="."):
     print("📄 Файлы:", files)
     print("📦 Всё содержимое:", all_items)
 
-# Вызов функции (можно заменить "." на другой путь)
+
 list_directories_and_files(".")
 
 #2 task
@@ -34,7 +34,6 @@ def check_access(path):
     else:
         print("❌ Путь не существует")
 
-# Укажи путь к файлу/папке, например "test.txt" или "C:/Users/..."
 check_access(r"C:\Users\Huawei\Desktop\PP2_labs\lab_6\example.txt")
 
 #3 task
@@ -59,7 +58,6 @@ def count_lines(filename):
     except FileNotFoundError:
         print(f"❌ Файл '{filename}' не найден!")
 
-# Укажи имя файла, например "example.txt"
 count_lines(r"C:\Users\Huawei\Desktop\PP2_labs\lab_6\example.txt")
 
 #5 task
@@ -73,7 +71,7 @@ def write_list_to_file(filename, data):
 data = ["Python", "Java", "C++", "JavaScript"]
 write_list_to_file(r"C:\Users\Huawei\Desktop\PP2_labs\lab_6\languages.txt", data)
 
-"""#6 task
+#6 task
 
 import string
 
@@ -90,7 +88,7 @@ def create_alphabet_files():
             file.write(f"This is file {letter}.txt")  # Записываем в файл
         print(f"✅ Файл '{filename}' создан")
 
-create_alphabet_files() """
+create_alphabet_files() 
 
 #7 task
 
@@ -103,7 +101,6 @@ def copy_file(source, destination):
     except FileNotFoundError:
         print(f"❌ Файл '{source}' не найден!")
 
-# Укажи исходный файл и файл назначения
 copy_file(r"C:\Users\Huawei\Desktop\PP2_labs\lab_6\example.txt", "copy_example.txt")
 
 #8 task
@@ -120,7 +117,6 @@ def delete_file(filename):
     else:
         print(f"❌ Файл '{filename}' не найден")
 
-# Укажи имя файла для удаления
 delete_file(r"C:\Users\Huawei\Desktop\PP2_labs\lab_6\copy_example.txt")
 
 
