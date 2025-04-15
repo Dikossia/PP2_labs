@@ -4,11 +4,8 @@ import sys
 import psycopg2
 from suppliers.config2 import load_config
 
-
-# Инициализация Pygame
 pygame.init()
 
-# Настройка экрана
 SCREEN_WIDTH = 600
 SCREEN_HEIGHT = 400
 GRID_SIZE = 20
@@ -25,7 +22,7 @@ conn = psycopg2.connect(
 )
 cursor = conn.cursor()
 
-# Цвета
+
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
@@ -114,7 +111,6 @@ class Snake:
         if user_id:
             print(f"Score for {self.player_name} saved successfully!")
 
-# Класс Еды
 class Food:
     def __init__(self):
         self.position = (0, 0)
@@ -137,11 +133,9 @@ class Food:
         if pygame.time.get_ticks() - self.timer > 0:
             self.spawn()
 
-# Границы поля
 walls = [(0, i) for i in range(GRID_HEIGHT)] + [(GRID_WIDTH - 1, i) for i in range(GRID_HEIGHT)] + \
         [(i, 0) for i in range(GRID_WIDTH)] + [(i, GRID_HEIGHT - 1) for i in range(GRID_WIDTH)]
 
-# Игровые переменные
 snake = Snake()
 snake.get_player_name()
 print("Player name:", snake.player_name)
@@ -150,7 +144,6 @@ score = 0
 level = 0
 speed = 10
 
-# Главный игровой цикл
 clock = pygame.time.Clock()
 running = True
 while running:
