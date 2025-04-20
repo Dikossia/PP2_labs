@@ -8,6 +8,7 @@ conn = psycopg2.connect(
 )
 cursor = conn.cursor()
 
+
 def insert_user(user_name, score):
     insert_query = """
     INSERT INTO users (user_name, score) 
@@ -18,6 +19,21 @@ def insert_user(user_name, score):
     user_data = cursor.fetchone()
     print(f"Пользователь добавлен: ID = {user_data[0]}, Имя = {user_data[1]}, Баллы = {user_data[2]}")
     return user_data[0]  # Возвращаем ID нового пользователя
+
+def list_to_CSV():
+    select_query = "SELECT user_id, user_name, score FROM users ORDER BY score DESC;"
+    cursor.execute(select_query)
+    rows = cursor.fetchall()
+    print("Пользователи, отсортированные по баллам (от максимального):")
+    for row in rows:
+        print(f"ID: {row[0]}, Имя: {row[1]}, Баллы: {row[2]}")
+
+    with open('users.csv', 'a') as file:
+        file.write("user_id,user_name,score\n")
+        for row in rows:
+            file.write(f"{row[0]},{row[1]},{row[2]}\n")
+
+
 
 def update(num, user_name, score):
     if num == 1:
@@ -73,6 +89,8 @@ def get_all_users():
     for row in rows:
         print(f"ID: {row[0]}, Имя: {row[1]}, Баллы: {row[2]}")
 
+
+
 def get_users_sorted_by_score():
     select_query = "SELECT user_id, user_name, score FROM users ORDER BY score DESC;"
     cursor.execute(select_query)
@@ -110,6 +128,8 @@ if __name__ == '__main__':
         get_all_users()
     elif operation == "5":
         get_users_sorted_by_score()
+    elif operation == "6":
+        list_to_CSV()
 
     # Закрытие соединения после выполнения всех операций
     cursor.close()
